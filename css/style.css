@@ -42,11 +42,9 @@ nav {
     background-color: #EAEAEA;
 }
 
-.fa-solid {
+.loc {
     margin-right: 17px;
 }
-
-
 
 /*Section Grand titre */
 
@@ -77,6 +75,15 @@ h1 {
     border: solid none;
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     padding: 13px 19px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 2s;
+    transform: scale(1);
+}
+
+.button:hover {
+    filter: brightness(1.15);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.75);
+    transform: scale(1.1);
 }
 
 /*Section : Fonctionnement et le trio de bouton*/
@@ -143,6 +150,7 @@ article {
 .container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 h3 {
@@ -163,6 +171,16 @@ h3 {
     font-weight: 300;
 }
 
+.fa-heart {
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.fa-heart:hover {
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+}
+
 /*Footer*/
 
 footer {
@@ -180,14 +198,26 @@ footer {
 
 ul {
     list-style-type: none;
+    margin: 0;
+   padding: 0;
+
   }
 
-  li {
-    margin: 7px 0 7px 20px;
-  }
+
   
-.footer_lign {
+  .footer_lign {
     display: flex;
     align-items: center;
-    margin: 0;
+   padding: 0;
+   margin-left: 25px;
+   margin-bottom: 7px;
+  }
+
+  .test {
+    margin-left: 25px;
+  }
+
+  .testa {
+    margin-left: 10px;
+    margin-bottom: 7px;
   }
