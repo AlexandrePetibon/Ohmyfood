@@ -41,11 +41,14 @@ font-size: 28px;
 margin-top: 32px;
 }
 
+
 .button {
-    border: solid;
+    border: none;
     border-radius: 15px;
     width: 90%;
     margin: 12px 5%;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    text-overflow: ellipsis;
 }
 
 .button:hover{
@@ -128,4 +131,13 @@ ul {
   a {
     color: black;
     text-decoration: none;
+  }
+
+
+  @media screen and (min-width: 640px) {
+    
+  }
+
+  @media screen and (min-width: 1020px) {
+
   }
