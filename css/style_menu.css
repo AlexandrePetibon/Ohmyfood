@@ -16,6 +16,11 @@ body {
     width: 40px;
     padding-bottom: 7px;
 }
+.ecriture {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
 
 h2 {
     font-family: 'Roboto', sans-serif;
@@ -96,16 +101,17 @@ margin-top: 32px;
 
 
 .button {
-    border: none;
-    border-radius: 15px;
-    width: 90%;/*90*/
-    margin: 12px 5%;
-    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+width: 100%;
     text-overflow: ellipsis;
 
 }
 
+.check{
+    color: white;
+    translate: 300px;
 
+    transition : 1s linear;
+}
 .green {
     border: none;
     background: #99E2D0;
@@ -113,30 +119,39 @@ border-radius: 0px 15px 15px 0px;
     width: 0%;
 
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+transition: 2s;
+display: inline-block;
+overflow: hidden;display: flex;
+justify-content: center;
+align-items: center;
 
 }
 
-.button:hover{
-    width: 70%;/*70*/
-    border-radius: 15px 0 0 15px;
-}
 .bigbutton {
     display: flex;
 flex-direction: row;
+border: none;
+    border-radius: 15px;
+    width: 90%;/*90*/
+    margin: 12px 5%;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+transition: 2s;
+}
 
-}
-@keyframes bouton {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 100%;
-    }
-}
 .bigbutton:hover .green {
     width: 20%;
-    animation: bouton 10s;
-    animation-duration: 5s;
+    translate: 0;
+    transition-duration: 2s;
+  
+    
+}
+.bigbutton:hover .check {
+
+    translate: -5px;
+    transition : 1s linear;
+
+
+
     
 }
 .pricebas {
@@ -224,6 +239,28 @@ ul {
     transform: scale(1.1);
 }
 
+.buttonfinalbis {
+    color: white;
+    border: 0 solid;
+    border-radius: 25px;
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+ 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 2s;
+    transform: scale(1);
+    margin-top: 1120px;
+    text-align: center;
+    width: 33%;
+    margin-left: 33%;
+    margin-right: 33%;
+    padding: 13px 19px;
+}
+
+.buttonfinalbis:hover {
+    filter: brightness(1.15);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.75);
+    transform: scale(1.1);
+}
 .grandtitle {
     display: flex;
     align-items: center;
@@ -237,31 +274,146 @@ ul {
 
 
 @keyframes transition {
-    0%   { margin-top: -100%; }
-    100% { margin-top: 0; }
+    0%   { opacity: 0;
+    translate: -100%;
+     }
+    100% { opacity: 1; 
+    translate: 0%;}
     }
 .bloc {
-     animation: transition 10s;
+     animation: transition 1s 1s;
+     animation-fill-mode: backwards;
 }
 
-@keyframes transition {
-    0%   { margin-top: -100%; }
-    100% { margin-top: 0; }
-    }
-.bloc2 { animation: transition 10s 10s ;
-}
-
-@keyframes transition {
-    0%   { margin-top: -100%; }
-    100% { margin-top: 0; }
-    }
-.bloc3{ animation: transition 10s 20s ;}
-
-  @media screen and (min-width: 640px) {
     
+.bloc2 { animation: transition 1s 3s ;
+    animation-fill-mode: backwards;
+
+}
+
+    
+.bloc3{ animation: transition 1s 5s ;
+    animation-fill-mode: backwards;
+}
+
+  @media screen and (min-width: 650px) {
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 25px;
+    }
+
+    .logo_footer {
+        height: 50px;
+        margin-left: 15%;
+        width: 200px;
+    }
+
+    ul {
+        margin-right: 25%;
+    }
+
+    .photo {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+      .card {
+    
+top :310px;
+        width: 80%;
+margin-left: 10%;
+  }
   }
 
-  @media screen and (min-width: 1020px) {
+  @media screen and (min-width: 1100px) {
+    .photo {
+        width: 100%;
+        height: 490px;
+        object-fit: cover;
+    }
 
+    .card {
+  
+    
+        top: 500px;
+        width: 70%;
+margin-left: 15%;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse; 
+    
+        justify-content: flex-start;
+      
+
+}
+
+
+.logo_footer {
+    height: 18px;
+    margin-left: 40px;
+    margin-right: 5%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 27px;
+}
+
+ul {
+    display: flex;
+
+align-items: flex-end;
+ 
+    margin-top: 52px;
+    margin-bottom: 48px;
+    text-align: center;
+ 
+    margin-right: 0;
+}
+
+.test {
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.testa {
+    margin-bottom: 10px;
+}
+
+.buttonfinal {
+    width: 15%;
+    margin-left: 42.5%;
+}
+
+.buttonfinalbis {
+    width: 15%;
+    margin-left: 42.5%;
+}
+
+.bigbutton:hover .green {
+    width: 10%;
   }
 
+  .bloc {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .bloc2 {
+    width: 70%;
+    margin-left: 15%;
+  }
+  
+  .bloc3 {
+    width: 70%;
+    margin-left: 15%;
+  }
+  
+  #logo {
+    margin: 15px 0;
+  }
+  #logo {
+    margin: 15px 0;
+}
+}
