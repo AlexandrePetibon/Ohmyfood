@@ -4,7 +4,7 @@ body {
     margin: auto;
 }
 
-.loade {
+.loader {
     position: fixed;
     display: grid;
     place-items: center;
@@ -244,9 +244,9 @@ article {
     padding: 5px 9px 0px 9px;
     margin-top: 20px;
     margin-bottom: 0;
-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-border-radius: 2px;
-font-size: 14px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #008766;
@@ -293,16 +293,14 @@ h3 {
     -webkit-text-stroke-color: black;
     transition : all 2s ease; 
     position: relative;
-
-transition: 3s;
-z-index: 2;
+    transition: 3s;
+    z-index: 2;
 }
 
 .heart:hover  {
-
    transition: 3s;
-z-index: 0;
-font-size: 25px;
+    z-index: 0;
+    font-size: 25px;
     margin-right: 20px;
     margin-top: 10px;
     color: transparent;
@@ -310,8 +308,8 @@ font-size: 25px;
     -webkit-text-stroke-color: transparent;
     transition : all 2s ease; 
     position: relative;
-
 }
+
 .heartcolo {
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     -webkit-background-clip: text;
@@ -326,12 +324,10 @@ font-size: 25px;
     bottom: 0%;
     z-index: 1;
     opacity: 0;
-
-
     transition: 3s;
 }
-.heartcolo:hover {
 
+.heartcolo:hover {
     transition: 3s;
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     -webkit-background-clip: text;
@@ -339,7 +335,7 @@ font-size: 25px;
     background-clip: text;
     -moz-text-fill-color: transparent;
     z-index: 2;
-opacity: 1;
+    opacity: 1;
 }
 
 /*Footer*/
@@ -400,12 +396,12 @@ ul {
 
     @keyframes rotate {
         0% {
-            scale: 0;
-            rotate: 0deg;
+            transform: scale(0);
+            transform: rotate(0deg);
         }
         100% {
-            scale: 1;
-            rotate: 360deg;
+            transform: scale(1);
+            transform: rotate(360deg);
         } 
     }
 
@@ -462,11 +458,13 @@ ul {
     }
 
      @keyframes transition {
-        0%   
-            { margin-left: -4000px; }
-        100% 
-            { margin-left: 0; }
+        0% {
+            margin-left: -4000px;
         }
+        100% {
+            margin-left: 0;
+        }
+    }
         
     a {
         animation: rotate;
@@ -474,8 +472,8 @@ ul {
 
     @keyframes rotate {
         100% {
-            rotate: 0;}
-        
+            transform: rotate(0);
+        }   
     }
 
     .card {
@@ -485,13 +483,9 @@ ul {
     footer {
         display: flex;
         flex-direction: row-reverse; 
-        
-            justify-content: flex-start;
-          
-    
+        justify-content: flex-start;
     }
     
-
     .logo_footer {
         height: 18px;
         margin-left: 40px;
@@ -505,13 +499,10 @@ ul {
 
     ul {
         display: flex;
-
- align-items: flex-end;
-     
+        align-items: flex-end;
         margin-top: 52px;
         margin-bottom: 48px;
         text-align: center;
-     
         margin-right: 0;
     }
 
@@ -519,8 +510,8 @@ ul {
         margin-top: 16px;
         margin-bottom: 10px;
     }
+
     .testa {
         margin-bottom: 10px;
     }
 }
-
