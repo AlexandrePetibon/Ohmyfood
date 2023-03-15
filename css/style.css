@@ -376,6 +376,10 @@ ul {
     margin-left: 25px;
 }
 
+.mail {
+    text-decoration: none;
+    color: white;
+}
 
 /*Media query : tablette*/
 
