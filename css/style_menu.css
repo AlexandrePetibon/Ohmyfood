@@ -241,12 +241,6 @@ h1 {
         width: 80%;
         margin-left: 10%;
     }
-  
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }  
 }
 
 /*Media query : desktop*/
